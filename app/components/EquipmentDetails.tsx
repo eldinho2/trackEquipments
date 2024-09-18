@@ -63,13 +63,19 @@ const EquipmentDetails: React.FC<EquipmentDetailsProps> = ({ equipment }) => {
     }
   }, [stateHistory, equipment]);
 
+  if (drawerStatus) {
+    return (
+      <Drawer />
+    )
+  }
+
   if (!equipment) {
-    return null;
+    return null; 
   }
 
   return (
     <div className="flex">
-      {drawerStatus && <Drawer />}
+      {drawerStatus ? <Drawer /> : null}
       <div className="h-screen w-[450px] overflow-y-scroll p-6 bg-white shadow-lg rounded-lg border border-gray-200">
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">Detalhes do Equipamento</h2>
         <p className="text-black mb-6">
@@ -131,7 +137,7 @@ const EquipmentDetails: React.FC<EquipmentDetailsProps> = ({ equipment }) => {
           </p>
         )}
       </div>
-      {drawerStatus && <Drawer />}
+      <Drawer />
     </div>
   );
 };
