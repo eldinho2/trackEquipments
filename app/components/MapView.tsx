@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import { Equipment } from "./../../types";
 import equipmentData from "../data/equipment.json";
 import equipamentPositionHistory from "../data/equipmentPositionHistory.json";
 import { findEquipmentState } from "../utils/findEquipmentState";
@@ -13,7 +12,7 @@ import { iconShow } from "../../store/iconShow";
 
 
 interface MapViewProps {
-  onSelectEquipment: (equipment: Equipment) => void;
+  onSelectEquipment: (equipment: any) => void;
   filters: {searchTerm: string; status: string;}
 }
 
