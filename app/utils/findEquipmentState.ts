@@ -1,5 +1,5 @@
-import equipmentState from "../../../data/equipmentState.json";
-import equipmentStateHistory from "../../../data/equipmentStateHistory.json";
+import equipmentState from "../data/equipmentState.json";
+import equipmentStateHistory from "../data/equipmentStateHistory.json";
 import { Position } from "../../types";
 
 export const findEquipmentState = (

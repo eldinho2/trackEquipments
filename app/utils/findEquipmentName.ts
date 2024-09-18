@@ -1,5 +1,5 @@
-import equipmentData from "../../../data/equipment.json";
-import equipmentModel from "../../../data/equipmentModel.json";
+import equipmentData from "../data/equipment.json";
+import equipmentModel from "../data/equipmentModel.json";
 import { Position } from "../../types";
 
 export const findEquipmentName = (positionOrModelId: Position | string) => {

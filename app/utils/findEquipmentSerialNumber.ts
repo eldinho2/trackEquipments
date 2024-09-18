@@ -1,4 +1,4 @@
-import equipmentData from "../../../data/equipment.json";
+import equipmentData from "../data/equipment.json";
 import { Position } from "../../types";
 
 export const findEquipmentSerialNumber = (position: Position) => {

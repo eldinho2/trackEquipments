@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Equipment } from "./../../types";
-import equipmentStateHistory from "../../../data/equipmentStateHistory.json";
+import equipmentStateHistory from "../data/equipmentStateHistory.json";
 import { findEquipmentName } from "../utils/findEquipmentName";
 import { drawerStore } from "../../store/drawerStore";
 import { Drawer } from "./Drawer";
 import { findEquipmentState } from "../utils/findEquipmentState";
 import { dataFormater } from "../utils/dataFormater";
-import equipmentModel from "../../../data/equipmentModel.json";
+import equipmentModel from "../data/equipmentModel.json";
 
 interface EquipmentDetailsProps {
   equipment: Equipment | null;
