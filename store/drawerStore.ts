@@ -3,6 +3,7 @@ import { create } from "zustand";
 interface DrawerState {
   drawerStatus: boolean;
   setDrawerStatus: (status: boolean) => void;
+  toggleDrawerStatus: () => void;
 }
 
 
